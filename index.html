@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link href="/flocking.css" type="text/css" rel="stylesheet" />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script src="/flocking.js" ></script>
+    </head>
+    <body>
+        <div class="code-display" id="rendering-test-display">
+            <canvas id="rendering-test-display-canvas" width="400" height="300">
+            </canvas>
+            <button type="button" id="rendering-test-display-restart">Restart Simulation</button>
+        </div>
+        <div class="code-display" id="rendering-test-wrapped-display">
+            <canvas id="rendering-test-wrapped-display-canvas" width="400" height="300">
+            </canvas>
+            <button type="button" id="rendering-test-wrapped-display-restart">Restart Simulation</button>
+        </div>
+        <div class="code-display" id="separation-display">
+            <canvas id="separation-display-canvas" width="400" height="300">
+            </canvas>
+            <p>Separation Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="separation-display-strength">
+            <p>Separation Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="separation-display-distance">
+        
+            <button type="button" id="separation-display-restart">Restart Simulation</button>
+        </div>
+        <div class="code-display" id="cohesion-display">
+            <canvas id="cohesion-display-canvas" width="400" height="300">
+            </canvas>
+            <p>Cohesion Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cohesion-display-strength">
+            <p>Cohesion Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cohesion-display-distance">
+            <button type="button" id="cohesion-display-restart">Restart Simulation</button>
+        </div>
+        <div class="code-display" id="cohesion-separation-display">
+            <canvas id="cohesion-separation-display-canvas" width="400" height="300">
+            </canvas>
+            <p>Separation Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cohesion-separation-display-separationstrength">
+            <p>Separation Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cohesion-separation-display-separationdistance">
+            <p>Cohesion Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cohesion-separation-display-cohesionstrength">
+            <p>Cohesion Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="cohesion-separation-display-cohesiondistance">
+            <button type="button" id="cohesion-separation-display-restart">Restart Simulation</button>
+        </div>
+        <div class="code-display" id="final-display">
+            <canvas id="final-display-canvas" width="400" height="300">
+            </canvas>
+            <p>Separation Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="final-display-separationstrength">
+            <p>Separation Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="final-display-separationdistance">
+            <p>Cohesion Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="final-display-cohesionstrength">
+            <p>Cohesion Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="final-display-cohesiondistance">
+            <p>Alignment Strength</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="final-display-alignmentstrength">
+            <p>Alignment Distance</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="final-display-alignmentdistance">
+            <button type="button" id="final-display-restart">Restart Simulation</button>
+        </div>
+    </body>
+</html>
